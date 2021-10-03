@@ -1,8 +1,8 @@
 #buttonContainer {
   padding: 2rem;
-  height: 70%;
+  height: 63%;
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   grid-template-columns: auto auto auto auto;
   background-color: $veryDarkDesaturatedBlueScreen;
   border-radius: 10px;
@@ -11,13 +11,16 @@
   .calcButton {
     background-color: $lightGrayishOrange;
     border-radius: 5px;
-    text-align: center;
     padding: 1rem;
+    font-family: inherit;
+    font-size: 3.2rem;
   }
 
   #reset {
     grid-column: 1 / span 2;
     font-size: 1.6rem;
+    background-color: $desaturatedDarkBlueBackground;
+    color: $white;
   }
 
   #equals {
@@ -28,6 +31,8 @@
   }
 
   #del {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    background-color: $desaturatedDarkBlueBackground;
+    color: $white;
   }
 }
