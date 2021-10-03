@@ -1,0 +1,33 @@
+#buttonContainer {
+  padding: 3rem;
+  height: 63%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto auto auto auto;
+  background-color: $veryDarkDesaturatedBlueScreen;
+  border-radius: 10px;
+  margin-top: 2.3rem;
+
+  .calcButton {
+    background-color: $lightGrayishOrange;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #reset {
+    grid-column: 1 / span 2;
+    font-size: 1.6rem;
+  }
+
+  #equals {
+    grid-column: 3 / span 2;
+    font-size: 18px;
+    background-color: $red;
+    color: $white;
+  }
+
+  #del {
+    font-size: 1.7rem;
+  }
+}
