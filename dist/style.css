@@ -19,11 +19,11 @@
 }
 
 #buttonContainer {
-  padding: 3rem;
-  height: 63%;
+  padding: 2rem;
+  height: 70%;
   display: -ms-grid;
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
   background-color: #182034;
