@@ -1,6 +1,7 @@
 #buttonContainer {
   padding: 2rem;
-  height: 63%;
+  height: 75%;
+  max-height: 500px;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: auto auto auto auto;
@@ -11,7 +12,6 @@
   .calcButton {
     background-color: $lightGrayishOrange;
     border-radius: 5px;
-    padding: 1rem;
     font-family: inherit;
     font-size: 3.2rem;
   }

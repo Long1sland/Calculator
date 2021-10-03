@@ -20,7 +20,8 @@
 
 #buttonContainer {
   padding: 2rem;
-  height: 63%;
+  height: 75%;
+  max-height: 500px;
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
@@ -34,7 +35,6 @@
 #buttonContainer .calcButton {
   background-color: #eae3dc;
   border-radius: 5px;
-  padding: 1rem;
   font-family: inherit;
   font-size: 3.2rem;
 }
