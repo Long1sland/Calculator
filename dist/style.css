@@ -20,11 +20,11 @@
 
 #buttonContainer {
   padding: 2rem;
-  height: 75%;
-  max-height: 500px;
+  height: 61%;
+  max-height: 430px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 0.8rem;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
   background-color: #182034;
