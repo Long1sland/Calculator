@@ -1,6 +1,19 @@
 #display {
   height: 13%;
+  width: 100%;
   background-color: $veryDarkDesaturatedBlueScreen;
   border-radius: 10px;
   margin-top: 3rem;
+  color: white;
+  text-align: right;
+  padding: 32px;
+  overflow: scroll;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
 }

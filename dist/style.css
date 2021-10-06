@@ -13,9 +13,22 @@
 
 #display {
   height: 13%;
+  width: 100%;
   background-color: #182034;
   border-radius: 10px;
   margin-top: 3rem;
+  color: white;
+  text-align: right;
+  padding: 32px;
+  overflow: scroll;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px;
+}
+
+#display:focus {
+  outline: none;
 }
 
 #buttonContainer {
@@ -37,6 +50,10 @@
   border-radius: 5px;
   font-family: inherit;
   font-size: 3.2rem;
+  color: #444b5a;
+  cursor: pointer;
+  background-image: none;
+  border: none;
 }
 
 #buttonContainer #reset {
@@ -78,7 +95,7 @@ html {
 
 body {
   margin: 0;
-  padding: 2.5rem;
+  padding: 2rem;
   background-color: #3c4564;
   font-size: 3.2rem;
   font-family: "Spartan", sans-serif;
