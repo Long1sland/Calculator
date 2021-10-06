@@ -2,6 +2,7 @@ const number = document.querySelectorAll(".number");
 const display = document.querySelector("#display");
 const reset  = document.querySelector("#reset");
 const deletes = document.querySelector("#del");
+const equals = document.querySelector("#equals")
 
 
 class calulator {
@@ -37,11 +38,11 @@ class calulator {
     }
 
     delete () {
-        this.value = this.value.slice(0,-1)
+          this.value = this.value.slice(0,-1)  
     }
 
     compute () {
-
+        this.value = eval(this.value).toString()
     }
 }
 
@@ -56,9 +57,6 @@ number.forEach(button => {
 })
 
 
-
-
-
 reset.addEventListener("click", () => {
     calculator.clear()
     calculator.updateDisplay()
@@ -66,6 +64,11 @@ reset.addEventListener("click", () => {
 
 deletes.addEventListener("click", () => {
     calculator.delete()
+    calculator.updateDisplay()
+})
+
+equals.addEventListener("click", () => {
+    calculator.compute()
     calculator.updateDisplay()
 })
 
