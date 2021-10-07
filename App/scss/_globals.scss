@@ -3,6 +3,42 @@ html {
   box-sizing: border-box;
 }
 
+.theme1 {
+  // Backgrounds
+  --mainBackgroundColor: #3c4564;
+  --veryDarkDesaturatedBlueToggle: hsl(223, 31%, 20%);
+  --veryDarkDesaturatedBlueScreen: hsl(224, 36%, 15%);
+
+  // Text
+  --veryDarkGrayishBlue: hsl(221, 14%, 31%);
+  --white: white;
+
+  // Keys
+  --desaturatedDarkBlueBackground: hsl(225, 21%, 49%);
+  --desaturatedDarkBlueShadow: hsl(224, 28%, 35%);
+  --red: hsl(6, 63%, 50%);
+  --darkRed: hsl(6, 70%, 34%);
+  --lightGrayishOrange: hsl(30, 25%, 89%);
+  --GrayishOrange: hsl(28, 16%, 65%);
+}
+
+.theme2 {
+  // Backgrounds
+  --mainBackgroundColor: hsl(0, 0%, 90%);
+  --veryDarkDesaturatedBlueToggle: hsl(0, 5%, 81%);
+  --veryDarkDesaturatedBlueScreen: hsl(0, 0%, 93%);
+  // Text
+  --veryDarkGrayishBlue: hsl(60, 10%, 19%);
+  --white: black;
+  //keys
+  --desaturatedDarkBlueBackground: hsl(185, 42%, 37%);
+  --desaturatedDarkBlueShadow: hsl(185, 58%, 25%);
+  --red: hsl(25, 98%, 40%);
+  --darkRed: hsl(25, 99%, 27%);
+  --lightGrayishOrange: hsl(45, 7%, 89%);
+  --GrayishOrange: hsl(35, 11%, 61%);
+}
+
 *,
 *::before,
 *::after {
@@ -12,8 +48,9 @@ html {
 body {
   margin: 0;
   padding: 2rem;
-  background-color: $mainBackgroundColor;
+  background-color: var(--mainBackgroundColor);
   font-size: 3.2rem;
   font-family: "Spartan", sans-serif;
+  font-weight: 700;
   height: 100vh;
 }

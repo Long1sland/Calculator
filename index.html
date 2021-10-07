@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="dist/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div id = "header">
         <span>calc</span>
         <div id = "theme">
-            <div>a</div>
+            <span>THEME</span>
+            <pre>1    2</pre>
+                <input type="radio" name = "toggle" id = "theme1">
+                <input type="radio" name = "toggle" id = "theme2">
+                <div id = "ball"></div>
         </div>
     </div>
     
@@ -40,6 +44,7 @@
         <button id = "reset"class = "calcButton">RESET</button>
         <button id = "equals" class = "calcButton">=</button>
     </div>
+    <script src="/App/js/themes.js"></script>
     <script src="App/js/script.js"></script>
-</body>
+    
 </html>

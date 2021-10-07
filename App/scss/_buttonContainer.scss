@@ -5,16 +5,18 @@
   display: grid;
   grid-gap: 0.8rem;
   grid-template-columns: auto auto auto auto;
-  background-color: $veryDarkDesaturatedBlueScreen;
+  background-color: var(--veryDarkDesaturatedBlueScreen);
   border-radius: 10px;
   margin-top: 2.3rem;
+  font-weight: 700;
 
   .calcButton {
-    background-color: $lightGrayishOrange;
+    background-color: var(--lightGrayishOrange);
     border-radius: 5px;
     font-family: inherit;
     font-size: 3.2rem;
-    color: $veryDarkGrayishBlue;
+    font-weight: inherit;
+    color: var(--veryDarkGrayishBlue);
     cursor: pointer;
     background-image: none;
     border: none;
@@ -23,20 +25,20 @@
   #reset {
     grid-column: 1 / span 2;
     font-size: 1.6rem;
-    background-color: $desaturatedDarkBlueBackground;
-    color: $white;
+    background-color: var(--desaturatedDarkBlueBackground);
+    color: var(--white);
   }
 
   #equals {
     grid-column: 3 / span 2;
     font-size: 18px;
-    background-color: $red;
-    color: $white;
+    background-color: var(--red);
+    color: var(--white);
   }
 
   #del {
     font-size: 1.6rem;
-    background-color: $desaturatedDarkBlueBackground;
-    color: $white;
+    background-color: var(--desaturatedDarkBlueBackground);
+    color: var(--white);
   }
 }
