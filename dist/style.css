@@ -151,8 +151,8 @@ body {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.8rem;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   background-color: var(--veryDarkDesaturatedBlueScreen);
   border-radius: 10px;
   margin-top: 2.3rem;
