@@ -147,6 +147,7 @@ body {
 #buttonContainer {
   padding: 2rem;
   height: 61%;
+  width: auto;
   max-height: 430px;
   display: -ms-grid;
   display: grid;
