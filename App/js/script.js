@@ -42,7 +42,15 @@ class calulator {
     }
 
     compute () {
-        this.value = eval(this.value).toString()
+        
+        try {
+            this.value = eval(this.value).toString()
+        }
+
+        catch {
+            alert("Invalid Input!")
+            this.clear()
+        }
     }
 }
 
