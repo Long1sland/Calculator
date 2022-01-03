@@ -24,7 +24,7 @@ class calulator {
     }
 
     appendKeys () {
-        this.value += this.display.value.toString()
+        this.value = this.display.value.toString()
     }
 
     delete () {
