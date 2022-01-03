@@ -24,17 +24,7 @@ class calulator {
     }
 
     appendKeys () {
-        this.value += this.display.value
-    }
-
-    inputChecker (){
-        if(true) {
-            console.log("water")
-        }
-
-        else{
-            console.log("no problem")
-        }
+        this.value += this.display.value.toString()
     }
 
     delete () {
@@ -44,7 +34,7 @@ class calulator {
     compute () {
         
         try {
-            this.value = eval(this.value).toString()
+            this.value = eval(this.value)
         }
 
         catch {
@@ -78,5 +68,12 @@ deletes.addEventListener("click", () => {
 equals.addEventListener("click", () => {
     calculator.compute()
     calculator.updateDisplay()
+})
+
+display.addEventListener("change",() => {
+    calculator.appendKeys()
+    calculator.compute()
+    calculator.updateDisplay()
+    calculator.clear()    
 })
 
