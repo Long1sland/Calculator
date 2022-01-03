@@ -16,7 +16,7 @@ class calulator {
     }
 
     updateDisplay() {
-        this.display.value = this.value.toString()
+        this.display.value = this.value
     }
 
     appendOnScreen (number) {
@@ -28,7 +28,7 @@ class calulator {
     }
 
     delete () {
-          this.value = this.value.slice(0,-1)  
+          this.value = this.value.toString().slice(0,-1)  
     }
 
     compute () {
