@@ -47,6 +47,8 @@ body {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
   height: 100vh;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #theme {
